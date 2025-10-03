@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Space tourism website</title>
+  <style>
+    body {
+      background-image: url(space.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+    }
+
+    .navigation {
+      height: 70px;
+      width: 400px;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 10px;
+    }
+
+    .nav-item {
+      padding: 10px;
+      color: white;
+      font-size: 14px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .nav-item:hover {
+      border-bottom: 2px solid white;
+      text-shadow: 0 0 5px white;
+    }
+
+    .crew-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 100px 100px 50px;
+    }
+
+    .crew-text {
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .crew-img {
+      width: 300px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+    }
+
+    .crew-img:hover {
+      transform: scale(1.05) rotate(1deg);
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+      filter: brightness(1.2) contrast(1.1);
+    }
+
+    .back-button {
+      display: block;
+      margin: 50px auto;
+      padding: 15px 30px;
+      background-color: white;
+      color: black;
+      font-size: 16px;
+      letter-spacing: 2px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      text-align: center;
+      width: 150px;
+    }
+
+    .back-button:hover {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top">
+    <div class="logo">
+      <img src="assets/shared/logo.svg" alt="Space tourism logo" width="50px" height="50px">
+    </div>
+    <div class="navigation">
+      <div class="nav-item">00 Home</div>
+      <div class="nav-item">01 Destination</div>
+      <div class="nav-item">02 Crew</div>
+      <div class="nav-item">03 Technology</div>
+    </div>
+  </div>
+
+  <div class="crew-section">
+    <div class="crew-text">
+      <h1>02 Meet your crew</h1>
+      <h4>Flight Engineer</h4>
+      <h2>Anousheh Ansari</h2>
+      <p>
+        Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
+        Ansari was the fourth self-funded space tourist, the first self-funded woman to
+        fly to the ISS, and the first Iranian in space.
+      </p>
+    </div>
+    <img src="assets/crew/image-anousheh-ansari.png" alt="Anousheh Ansari" class="crew-img">
+  </div>
+
+  <a href="index.html" class="back-button">Back</a>
+
+</body>
+</html>

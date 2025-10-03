@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <style>
+    body {
+      background-image: url(assets/home/background-home-desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      width: 1500px;
+    }
+    .top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    .navigation{
+      height: 70px;
+      width: 400px;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 10px;
+    }
+    .nav-item {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+    .nav-item:hover {
+      border-bottom: 2px solid white;
+    }
+    .text {
+      color: white;
+      font-family: 'Arial', sans-serif;
+      padding: 50px;
+      max-width: 600px;
+      margin-top: 120px;
+      gap: 30px;
+    }
+    h1 {
+      font-size: 100px;
+      margin: 10px 0;
+      font-family: 'Arial Black', sans-serif;
+    }
+    h4 {
+      font-size: 20px;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .explore {
+      margin-top: 30px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: none;
+      background-color: white;
+      color: black;
+      font-size: 20px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      margin-left: 1300px;
+      margin-top: -100px;
+    }
+    .explore:hover {
+      box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+      background-color: transparent;
+      color: white;
+    }
+    a {
+     text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<div class="top">
+  <div class="logo"><img src="assets/shared/logo.svg" alt="Space tourism logo" width="50px" height="50px"></div>
+  <div class="navigation">
+    <div class="nav-item">00 Home</div>
+    <div class="nav-item">01 Destination</div>
+    <div class="nav-item">02 Crew</div>
+    <div class="nav-item">03 Technology</div>
+  </div>
+  </div>
+  <div class="text">
+<h4>So, you want to travel to</h4>
+  <h1>Space</h1>
+  <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+  outer space and not hover kind of on the edge of it. Well sit back, and relax 
+  because we’ll give you a truly out of this world experience!</p>
+<button class="explore"><a href="crew-engineer.html">Explore</a></button>
+</div>
+
+</body>
+</html>
